@@ -1,0 +1,64 @@
+
+
+nav{
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    
+}
+
+nav > span > img {
+    height: 30px;
+    width: auto;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul >li {
+    margin-right: 30px;
+}
+.img-center {
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tajmahal-photos > .grid-container{
+ display: flex;
+ gap: 30px;
+ overflow: auto;
+}
+section{
+    display: block;
+}
+
+section > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#item1,#item2,#item3,#item4 > img{
+    height: 350px;
+    display: flex;
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+}
+
+
+#item1,#item2,#item3,#item4:hover img {
+    filter: brightness(100%);
+    transform: scale(1.5);
+  }
